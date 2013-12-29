@@ -14,13 +14,13 @@
 
 	// Look for karma template, if found, we are in the karma suite
 	if ( window.__html__ ) {
-		document.body.innerHTML = window.__html__[ "data/fixtures.html" ];
+		document.body.innerHTML = window.__html__[ "test/data/fixtures.html" ];
+
 		setup = jQuery.noop;
 
 	// If template has not been found, it must be a QUnit suite
 	} else {
 		QUnit.config.autostart = false;
-
 		jQuery.get( "data/fixtures.html" ).done(function( html ) {
 			fixture = html;
 			QUnit.start();
