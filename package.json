@@ -51,7 +51,7 @@
 	"scripts": {
 		"build": "npm install && grunt",
 		"install": "grunt bower",
-		"start": "grunt watch",
+		"start": "grunt start",
 		"test": "grunt test"
 	},
 
