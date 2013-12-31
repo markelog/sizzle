@@ -36,7 +36,6 @@
 		"raises": false,
 
 		"createWithFriesXML": false,
-		"fireNative": false,
 		"setup": false,
 		"q": false,
 		"t": false,
