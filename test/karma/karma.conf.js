@@ -34,10 +34,6 @@ module.exports = function( config ) {
 				pattern: "test/data/mixed_sort.html",
 				watched: false,
 				included: false
-			},
-			{
-				pattern: "test/data/empty.js",
-				included: false
 			}
 		],
 
