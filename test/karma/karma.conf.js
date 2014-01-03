@@ -6,7 +6,8 @@ module.exports = function( config ) {
 	config.set({
 		browserStack: {
 			project: "sizzle",
-			timeout: 600 // 10 min
+			timeout: 600, // 10 min
+			startTunnel: false
 		},
 
 		// Can't specify path as "../../test" which would be intuitive
