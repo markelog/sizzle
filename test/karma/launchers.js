@@ -1,6 +1,11 @@
 "use strict";
 
 module.exports = {
+	"travis_chrome": {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
+    },
+
 	"bs_firefox-3.6": {
 		base: "BrowserStack",
 		browser: "firefox",

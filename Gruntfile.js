@@ -5,6 +5,7 @@ module.exports = function( grunt ) {
 		isBrowserStack = process.env.BROWSER_STACK_USERNAME && process.env.BROWSER_STACK_ACCESS_KEY,
 		browsers = {
 			phantom: [ "PhantomJS" ],
+			travis: [ "Firefox", "travis_chrome", "PhantomJS" ],
 			desktop: [],
 			android: [],
 			ios: [],
@@ -265,7 +266,7 @@ module.exports = function( grunt ) {
 
 		// See #314 :-(
 		// "karma:android", "karma:oldAndroid"
-	] : "karma:phantom" );
+	] : "karma:travis" );
 
 	grunt.registerTask( "build", [ "lint", "compile", "uglify", "dist" ] );
 	grunt.registerTask( "default", [ "build", "tests", "compare_size" ] );

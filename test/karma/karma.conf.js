@@ -82,9 +82,4 @@ module.exports = function( config ) {
 		browserDisconnectTimeout: 3e5,
 		browserDisconnectTolerance: 3
 	});
-
-	// Deal with Travis environment
-	if ( isTravis ) {
-		config.browsers.push( "Firefox" );
-	}
 };
