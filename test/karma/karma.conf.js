@@ -85,16 +85,6 @@ module.exports = function( config ) {
 
 	// Deal with Travis environment
 	if ( isTravis ) {
-
-		// Browserstack launcher specifies "build" options as a default value
-		// of "TRAVIS_BUILD_NUMBER" variable, but this way a bit more verbose
-		config.browserStack.build = "travis #" + process.env.TRAVIS_BUILD_NUMBER;
-
-		// You can't get access to secure environment variables from pull requests
-		// so we don't have browserstack from them, but travis has headless Firefox so use that
-		if ( !(process.env.BROWSER_STACK_USERNAME && process.env.BROWSER_STACK_ACCESS_KEY) &&
-			process.env.TRAVIS_PULL_REQUEST ) {
-			config.browsers.push( "Firefox" );
-		}
+		config.browsers.push( "Firefox" );
 	}
 };

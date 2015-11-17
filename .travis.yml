@@ -2,6 +2,9 @@ sudo: false
 language: node_js
 node_js:
 - '0.10'
+addons:
+  firefox: "42.0"
+
 env:
     global:
         - secure: "j17tHs7MhF1VuJ7ChImA0a3kd+uHPri2HJJxJ++PKCEF7pAu/cksMq9v3xQp9ZajPJJ0z4gTQnMjrzUSjhL11cpweBy84suA/vqjoh4Rp6ouV9yv/wThcij6GHd0S9MzYol6b3iR1CCauQpQwy+dff1HJvcGrcheuxD62EhVzoI="
