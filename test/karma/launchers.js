@@ -2,8 +2,8 @@
 
 module.exports = {
 	"travis_chrome": {
-        base: 'Chrome',
-        flags: ['--no-sandbox']
+        base: "Chrome",
+        flags: [ "--no-sandbox" ]
     },
 
 	"bs_firefox-3.6": {
