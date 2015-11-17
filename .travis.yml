@@ -4,6 +4,7 @@ node_js:
 - '0.10'
 addons:
   firefox: "42.0"
+  Chromium: "46.0"
 before_script:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
