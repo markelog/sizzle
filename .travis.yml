@@ -6,7 +6,7 @@ addons:
   firefox: "42.0"
   apt:
     packages:
-    - google-chrome-stable
+    - chromium-browser
 
 before_script:
   - export DISPLAY=:99.0
