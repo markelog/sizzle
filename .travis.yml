@@ -9,7 +9,7 @@ addons:
     - google-chrome-stable
 
 install:
-  - sudo apt-get update
+  - sudo apt-get update -qq
 
 before_script:
   - export DISPLAY=:99.0
